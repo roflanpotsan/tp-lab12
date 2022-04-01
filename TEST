@@ -666,19 +666,6 @@ NOTE:  Pressing  v  starts Visual selection.  You can move the cursor around
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		   Lesson 5.4: RETRIEVING AND MERGING FILES
 
-  1. Move the cursor to this line.
-
-  2. Press  v  and move the cursor to the fifth item below.  Notice that the
-     text is highlighted.
-
-  3. Press the  :  character.  At the bottom of the screen  :'<,'> will appear.
-
-  4. Type  w TEST  , where TEST is a filename that does not exist yet.  Verify
-     that you see  :'<,'>w TEST  before you press <ENTER>.
-
-  5. Vim will write the selected lines to the file TEST.  Use  :!dir  or  :!ls
-     to see it.  Do not remove it yet!  We will use it in the next lesson.
-
 
        ** To insert the contents of a file, type  :r FILENAME  **
 
@@ -699,10 +686,6 @@ NOTE:  You can also read the output of an external command.  For example,
        cursor.
 
 
-TEST
-TEST1
-tutor
-tutor~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			       Lesson 5 SUMMARY
 
@@ -740,12 +723,10 @@ tutor~
   3. Now type some text and press <ESC> to exit Insert mode.
 
 ---> After typing  o  the cursor is placed on the open line in Insert mode.
-new line down
 
   4. To open up a line ABOVE the cursor, simply type a capital	O , rather
      than a lowercase  o.  Try this on the line below.
 
-new line above
 ---> Open up a line above this by typing O while the cursor is on this line.
 
 
@@ -768,7 +749,7 @@ new line above
 
   5. Use  e  to move to the next incomplete word and repeat steps 3 and 4.
 
----> This line will allow you to practice appending text to a line.
+---> This li will allow you to pract appendi text to a line.
 ---> This line will allow you to practice appending text to a line.
 
 NOTE:  a, i and A all go to the same Insert mode, the only difference is where
@@ -791,7 +772,7 @@ NOTE:  a, i and A all go to the same Insert mode, the only difference is where
 
   4. Repeat the steps to replace the remaining xxx.
 
----> Adding 123 to 456 gives you 579.
+---> Adding 123 to xxx gives you xxx.
 ---> Adding 123 to 456 gives you 579.
 
 NOTE:  Replace mode is like Insert mode, but every typed character deletes an
@@ -817,8 +798,7 @@ NOTE:  Replace mode is like Insert mode, but every typed character deletes an
      the next line with  j$  and put the text there with  p .
 
 --->  a) this is the first item.
-      b) this is the first item.
-
+      b)
 
   NOTE: You can also use  y  as an operator:  yw  yanks one word,
         yy  yanks the whole line, then  p  puts that line.
